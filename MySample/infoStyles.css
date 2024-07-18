@@ -62,7 +62,7 @@
 /* info 間距樣式 */
 .info-spacing {
 	/* 上邊距 */
-	margin-top: -1.5vw;
+	margin-top: 0vw;
 }
 
 /* info 盒子樣式 */
@@ -143,7 +143,7 @@
 @media ( max-width : 768px) {
 	.info-spacing {
 		/* 上邊距調整 */
-		margin-top: calc(-6vw);
+		/*margin-top: calc(-6vw);*/
 	}
 	.info-title {
 		/* 小屏幕設備上的字體大小 */
