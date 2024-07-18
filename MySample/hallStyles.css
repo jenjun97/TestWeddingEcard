@@ -1,0 +1,43 @@
+/* hall 設定區 */
+/* 設定每個 section 的樣式 */
+.hall-section {
+	/* 允許使用絕對定位 */
+	position: relative;
+	/* 文字置中 */
+	text-align: center;
+	/* 背景圖像覆蓋區塊 */
+	background-size: cover;
+	/* 背景圖像置中 */
+	background-position: center;
+	/* 設定高度為自動 */
+	height: auto;
+}
+
+/* 背景圖片 */
+.hallbg {
+	background-image: url('https://via.placeholder.com/800x200/FFD700');
+}
+
+/* info 內容樣式 */
+.hall-content {
+	/* 背景透明 */
+	background-color: transparent;
+	/* 最大寬度 */
+	max-width: 100%;
+	/* 上下外邊距為0，自動水平對齊 */
+	margin: 0 auto;
+}
+
+/* 設定每個 section 內的文字樣式 */
+.overlay-text {
+	margin: 0;
+	font-size: calc(1.5rem + 1vw);
+	color: rgba(255, 255, 255, 0.8);
+}
+
+/* RWD 設定 */
+@media ( max-width : 768px) {
+	.overlay-text {
+		font-size: calc(1.2rem + 1vw);
+	}
+}
