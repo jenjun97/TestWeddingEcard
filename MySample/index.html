@@ -1,63 +1,81 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>響應式設計</title>
-    <!-- 引入 Bootstrap 5 的 CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- 引入自定義的 CSS -->
-    <link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>響應式設計</title>
+	<!-- 引入 Bootstrap 5 的 CSS -->
+	<link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+	<!-- 引入自定義的 CSS -->
+	<link rel="stylesheet" href="fontStyles.css">
+	<link rel="stylesheet" href="topStyles.css">
+<!--	<link rel="stylesheet" href="infoStyles.css">-->
+<!--	<link rel="stylesheet" href="hallStyles.css">-->
+
+	<!-- 引入Google的字型 -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100..900&display=swap"
+		rel="stylesheet">
 </head>
+
 <body>
-    <div class="container-fluid">
-        <!-- 第一個區塊 -->
-        <div class="row section bg1 align-items-center">
-            <div class="col text-center">
-                <a href="https://example.com/1" class="d-block text-decoration-none">
-                    <p class="text">底圖1</p>
-                    <h1 class="overlay-text">透明背景的標題文字</h1>
-                </a>
-            </div>
-        </div>
-        <!-- 第二個區塊 -->
-        <div class="row section bg2 align-items-center">
-            <div class="col text-center">
-                <a href="https://example.com/2" class="d-block text-decoration-none">
-                    <p class="text">底圖2</p>
-                    <h1 class="overlay-text">透明背景的標題文字</h1>
-                </a>
-            </div>
-        </div>
-        <!-- 第三個區塊 -->
-        <div class="row section bg3 align-items-center">
-            <div class="col text-center">
-                <a href="https://example.com/3" class="d-block text-decoration-none">
-                    <p class="text">底圖3</p>
-                    <h1 class="overlay-text">透明背景的標題文字</h1>
-                </a>
-            </div>
-        </div>
-        <!-- 第四個區塊 -->
-        <div class="row section bg4 align-items-center">
-            <div class="col text-center">
-                <a href="https://example.com/4" class="d-block text-decoration-none">
-                    <p class="text">底圖4</p>
-                    <h1 class="overlay-text">透明背景的標題文字</h1>
-                </a>
-            </div>
-        </div>
-        <!-- 第五個區塊 -->
-        <div class="row section bg5 align-items-center justify-content-center">
-            <div class="col text-center">
-                <a href="https://example.com/5" class="d-block text-decoration-none">
-                    <p class="text">底圖5</p>
-                    <button class="btn btn-dark">按鈕</button>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- 引入 Bootstrap 5 的 JavaScript -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+	<div class="container-fluid">
+		<!-- title區塊 -->
+		<div class="row top-section topbg align-items-center">
+			<div class="col text-center">
+				<div class="overlay-container">
+					<p class="top-title dancing-script">Wedding</p>
+					<p class="top-sub-title inter">Angel & Jun</p>
+				</div>
+			</div>
+		</div>
+		<!-- info區塊 -->
+		<div class="row info.section infobg align-items-center">
+			<div class="col text-center">
+				<div class="info-content">
+					<div class="info-title">喜宴資訊</div>
+					<div class="row justify-content-center info-spacing">
+						<div class="col-6 col-md-3">
+							<div class="info-box">
+								<p>陳姻釗</p>
+								<p>Bride Angel</p>
+							</div>
+						</div>
+						<div class="col-6 col-md-3">
+							<div class="info-box">
+								<p>謝政均</p>
+								<p>Groom Jun</p>
+							</div>
+						</div>
+					</div>
+					<div class="info-box">
+						<p>Date</p>
+						<p>113年10月19日 中午12:00</p>
+					</div>
+					<div class="info-box">
+						<p>Amour 阿沐</p>
+						<p>桃園市平鎮區延平路二段371號</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- hall區塊 -->
+<!--		<div class="row section bg3 align-items-center">-->
+<!--			<div class="col text-center">-->
+<!--				<h1 class="overlay-text">透明背景的標題文字</h1>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+
+	<!-- 引入 Google jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
+	<!-- 引入 Bootstrap 5 的 JavaScript -->
+	<script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

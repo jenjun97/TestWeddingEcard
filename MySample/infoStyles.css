@@ -1,0 +1,68 @@
+/* info 設定區 */
+
+/* 設定每個 section 的樣式 */
+.info-section {
+	/* 允許使用絕對定位 */
+	position: relative;
+	/* 文字置中 */
+	text-align: center;
+	/* 背景圖像覆蓋區塊 */
+	background-size: cover;
+	/* 背景圖像置中 */
+	background-position: center;
+	/* 設定高度為自動 */
+	height: auto;
+	/* 根據圖片的比例設定底部填充來維持高度 */
+	padding-bottom: 50%;
+}
+
+.info-content {
+	background-color: transparent;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.info-title {
+	font-size: calc(1.5rem + 1vw);
+	margin-bottom: 20px;
+	font-weight: bold;
+	color: #000;
+}
+
+.info-spacing {
+	margin-top: -1.5vw;
+}
+
+.info-box {
+	background-color: transparent;
+	border-radius: 5px;
+	padding: 0px;
+	margin-bottom: 0px;
+	font-size: calc(1rem + 0.5vw);
+	color: #000;
+	text-align: center;
+}
+
+/* 背景圖片 */
+.infobg {
+	background-image: url('picture/info.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* RWD 設定 */
+@media (max-width: 768px) {
+	.info-spacing {
+		margin-top: calc(-6vw);
+	}
+
+	.info-title {
+		font-size: calc(1.2rem + 2vw);
+	}
+
+	.info-box p {
+		font-size: calc(0.8rem + 1vw);
+		margin-bottom: 5px;
+	}
+}
