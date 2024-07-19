@@ -31,12 +31,12 @@
 }
 
 /* 背景圖片 */
-.topbg {
+.top-bg {
 	background-image: url('picture/top.jpg');
 }
 
 /* overlay 容器樣式 */
-.overlay-container {
+.top-overlay-container {
 	position: absolute;
 	bottom: var(--overlay-bottom-offset, 10px);
 	left: 50%;

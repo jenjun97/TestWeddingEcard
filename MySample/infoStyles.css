@@ -43,6 +43,7 @@
 	max-width: 100%;
 	/* 上下外邊距為0，自動水平對齊 */
 	margin: 0 auto;
+	margin-top: 2vw;
 }
 
 /* info 標題樣式 */
@@ -124,7 +125,7 @@
 }
 
 /* 背景圖片樣式 */
-.infobg {
+.info-bg {
 	/* 背景圖片 */
 	background-image: url('picture/info.jpg');
 	/* 背景圖片覆蓋 */
@@ -144,6 +145,7 @@
 	.info-spacing {
 		/* 上邊距調整 */
 		/*margin-top: calc(-6vw);*/
+		
 	}
 	.info-title {
 		/* 小屏幕設備上的字體大小 */
