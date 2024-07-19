@@ -1,0 +1,56 @@
+/* calendar 設定區 */
+/* 設定 section 的樣式 */
+.calendar-section {
+	/* 允許使用絕對定位 */
+	position: relative;
+	/* 文字置中 */
+	text-align: center;
+	/* 背景圖像覆蓋區塊 */
+	background-size: cover;
+	/* 背景圖像置中 */
+	background-position: center;
+	/* 設定高度為自動 */
+	height: auto;
+}
+
+/* 背景圖片 */
+.calendar-bg-img {
+	background-image: url('picture/calendar.jpg');
+}
+/* 背景顏色 */
+.calendar-bg-color {
+	background-color: #f7dec8;
+}
+
+/* info 內容樣式 */
+.calendar-content {
+	/* 背景透明 */
+	background-color: transparent;
+	/* 最大寬度 */
+	max-width: 100%;
+	/* 上下外邊距為0，自動水平對齊 */
+	margin: 0 auto;
+}
+
+.calendar-title {
+	font-size: 2.5vw;
+	margin-top: 2vw;
+}
+
+/* info 間距樣式 */
+.calendar-spacing {
+	/* 上邊距 */
+	margin-top: 2vw;
+}
+
+.button{
+	transform:4vw;
+}
+
+/* RWD 設定 */
+@media ( max-width : 768px) {
+	.container {
+		display: inline-block; /* 确保transform能应用在内联元素上 */
+		transform: scale(0.4) !important; /* 缩小至80% */
+	}
+}
