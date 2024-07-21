@@ -1,6 +1,6 @@
-/* calendar 設定區 */
+/* remind 設定區 */
 /* 設定 section 的樣式 */
-.calendar-section {
+.remind-section {
 	/* 允許使用絕對定位 */
 	position: relative;
 	/* 文字置中 */
@@ -14,16 +14,16 @@
 }
 
 /* 背景圖片 */
-.calendar-bg-img {
-	background-image: url('picture/calendar.jpg');
+.remind-bg-img {
+	background-image: url('picture/remind.jpg');
 }
 /* 背景顏色 */
-.calendar-bg-color {
+.remind-bg-color {
 	background-color: #f7dec8;
 }
 
 /* info 內容樣式 */
-.calendar-content {
+.remind-content {
 	/* 背景透明 */
 	background-color: transparent;
 	/* 最大寬度 */
@@ -32,25 +32,29 @@
 	margin: 0 auto;
 }
 
-.calendar-title {
+.remind-title {
 	font-size: 2.5vw;
 	margin-top: 2vw;
 }
 
 /* info 間距樣式 */
-.calendar-spacing {
+.remind-spacing {
 	/* 上邊距 */
 	margin-top: 2vw;
 }
 
-.button{
-	transform:4vw;
-}
+	#bird-yellow, #bird-black {
+        	transform: scale(0.7); /* 縮小比例 */
+    }
 
 /* RWD 設定 */
 @media ( max-width : 768px) {
-	.container {
+	.container1 {
 		display: inline-block; /* 确保transform能应用在内联元素上 */
-		transform: scale(0.4) !important; /* 缩小至80% */
+		transform: scale(0.3) !important; /* 缩小至80% */
 	}
+	
+	#bird-yellow, #bird-black {
+        	transform: scale(0.5); /* 縮小比例 */
+    }
 }
