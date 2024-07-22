@@ -9,5 +9,9 @@ https://add-to-calendar-button.com/
 
 
 
-WeddingEcard
+// WeddingEcard
 https://jenjun97.github.io/WeddingEcard/?openExternalBrowser=1
+
+
+
+https://jenjun97.github.io/WeddingEcard/Sapmle/booking.ics

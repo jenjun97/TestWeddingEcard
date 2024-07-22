@@ -34,21 +34,23 @@
 }
 
 .contants-people {
-	font-size: 2vw;
-	margin-top: 2vw;
+	font-size: 3vw;
+	margin-top: 6vw;
 }
 
 .contants-phone {
-	font-size: 1.7vw;
+	font-size: 3vw;
+	margin-bottom: 3vw;
 }
 
 /* RWD 設定 */
 @media ( max-width : 768px) {
 	.contants-people {
 		font-size: 6vw;
-		margin-top: 2vw;
+		margin-top: 6vw;
 	}
 	.contants-phone {
 		font-size: 5vw;
+		margin-bottom: 6vw;
 	}
 }
