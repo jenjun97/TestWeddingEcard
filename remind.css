@@ -34,7 +34,7 @@
 
 .remind-title {
 	font-size: 2.5vw;
-	margin-top: 2vw;
+	margin: 2vw auto;
 }
 
 /* info 間距樣式 */
@@ -45,7 +45,7 @@
 
 #bird-yellow, #bird-black, #bird-blue {
 	transform: scale(0.7); /* 縮小比例 */
-	margin: auto;
+	margin: auto 0.5rem;
 }
 
 /* RWD 設定 */
@@ -54,7 +54,21 @@
 		font-size: 5vw;
 	}
 	.col-6.col-md-auto.d-flex.justify-content-center {
-		transform: scale(0.5); /* 縮小比例 */
-		margin: auto;
+		transform: scale(0.6) !important; /* 縮小比例 */
+		 margin: auto -10rem; /* 調整左邊距 */
+	}
+}
+
+@media ( max-width : 863px) {
+	.d-flex.flex-wrap {
+		flex-wrap: nowrap !important;
+	}
+	.remind-content .col-6 {
+		flex: 1 0 auto;
+		max-width: none;
+	}
+	.col-6.col-md-auto.d-flex.justify-content-center {
+		transform: scale(0.8); /* 縮小比例 */
+		margin: auto -5rem; /* 調整左邊距 */
 	}
 }

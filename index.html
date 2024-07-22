@@ -14,7 +14,6 @@
 <link rel="stylesheet" href="hall.css">
 <link rel="stylesheet" href="remind.css">
 <link rel="stylesheet" href="bird.css">
-<!-- <link rel="stylesheet" href="buttonStyles.css"> -->
 
 <!-- 引入Google的字型 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -64,10 +63,6 @@
 						<p class="info-date-text">113年10月19日 (六) 中午12:00</p>
 						<p class="info-date-text">[農曆]甲辰年9月11日</p>
 					</div>
-					<!-- 					<div class="info-place"> -->
-					<!-- 						<p class="info-place-title">Amour 阿沐</p> -->
-					<!-- 						<p class="info-place-text">桃園市平鎮區延平路二段371號</p> -->
-					<!-- 					</div> -->
 				</div>
 			</div>
 		</div>
@@ -75,7 +70,7 @@
 		<!-- remind區塊 -->
 		<div
 			class="row remind-section align-items-center remind-bg-color d-md-flex justify-content-md-center">
-			<div class="remind-title lxgw-wenkai-mono-tc-bold">加入行事曆</div>
+			<div class="remind-title noto-sans-tc-bold">加入行事曆</div>
 
 
 			<div class="remind-content">
@@ -127,8 +122,7 @@
 					</div>
 
 					<div class="col-6 col-md-auto d-flex justify-content-center">
-						<a id="bird-black" class="button button--pen"
-							href="Sample/booking.ics">
+						<a id="bird-black" class="button button--pen" href="booking.ics">
 							<div class="button__wrapper">
 								<span class="button__text">Apple</span>
 							</div>
@@ -153,12 +147,11 @@
 		</div>
 
 		<script>
-	    
 			function triggerAddToCalendar(calendarType) {
 				// 定義事件資料
 			      const event = {
-			        name: "釗&均喜宴",
-			        description: "揪哩呷喜酒",
+			        name: "姻釗&政均喜宴",
+			        description: "揪哩呷喜酒\n日期時間：2024-10-19(六) 12:00pm\n地點：Amour阿沐\n地址： 324桃園市平鎮區延平路二段371號\n電話：(03)495-1375\n\n喜宴連絡人：陳小姐 0915-018-429",
 			        startDate: "2024-10-19",
 			        startTime: "12:00",
 			        endDate: "2024-10-19",
@@ -166,10 +159,6 @@
 			        timeZone: "Asia/Taipei",
 			        location: "桃園市平鎮區延平路二段371號",
 			        options: [calendarType],
-			        size:"7",
-			        lightMode:"system",
-			        language:"zh",
-			        iCalFileName: "Event-釗&均喜宴"
 			      };
 			      atcb_action(event);
     		}
@@ -179,7 +168,7 @@
 		<div class="row hall-section align-items-center">
 			<div class="col text-center">
 				<div class="hall-content">
-					<div class="hall-title lxgw-wenkai-mono-tc-bold">婚宴會館：Amour阿沐</div>
+					<div class="hall-title noto-sans-tc-bold">婚宴會館：Amour阿沐</div>
 					<div class="hall-text">桃園市平鎮區延平路二段371號</div>
 					<div class="hall-text" onclick="location.href='tel:021-55031903'">電話號碼：(03)495-1375</div>
 					<div class="row justify-content-center hall-spacing">
@@ -209,6 +198,7 @@
 	<!-- 引用 Add to Calendar Button 的 JavaScript -->
 	<script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2"
 		async defer></script>
+
 </body>
 
 </html>
