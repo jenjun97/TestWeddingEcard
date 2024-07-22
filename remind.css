@@ -48,11 +48,6 @@
 	margin: auto;
 }
 
-/* 隱藏原本的 Add to Calendar Button */
-add-to-calendar-button1 {
-	display: none;
-}
-
 /* RWD 設定 */
 @media ( max-width : 768px) {
 	.remind-title {
