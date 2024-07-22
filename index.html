@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="hall.css">
 <link rel="stylesheet" href="remind.css">
 <link rel="stylesheet" href="bird.css">
+<link rel="stylesheet" href="contacts.css">
 
 <!-- 引入Google的字型 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -79,7 +80,7 @@
 						<button id="bird-yellow" class="button button--piyo"
 							onclick="triggerAddToCalendar('Google')">
 							<div class="button__wrapper">
-								<span class="button__text">Google</span>
+								<span class="button__text inter">Google</span>
 							</div>
 							<div class="characterBox">
 								<div class="character wakeup">
@@ -99,7 +100,7 @@
 						<button id="bird-blue" class="button button--hoo"
 							onclick="triggerAddToCalendar('Microsoft365')">
 							<div class="button__wrapper">
-								<span class="button__text">Outlook</span>
+								<span class="button__text inter">Outlook</span>
 							</div>
 							<div class="characterBox">
 								<div class="character wakeup">
@@ -124,7 +125,7 @@
 					<div class="col-6 col-md-auto d-flex justify-content-center">
 						<a id="bird-black" class="button button--pen" href="booking.ics">
 							<div class="button__wrapper">
-								<span class="button__text">Apple</span>
+								<span class="button__text inter">Apple</span>
 							</div>
 							<div class="characterBox">
 								<div class="character wakeup">
@@ -165,7 +166,7 @@
   		</script>
 
 		<!-- hall區塊 -->
-		<div class="row hall-section align-items-center">
+		<div class="row hall-section align-items-center hall-bg-img">
 			<div class="col text-center">
 				<div class="hall-content">
 					<div class="hall-title noto-sans-tc-bold">婚宴會館：Amour阿沐</div>
@@ -189,9 +190,12 @@
 		</div>
 	</div>
 
-	<!-- 區塊 -->
-	<div class="row hall-section align-items-center">
-		<div class="col text-center"></div>
+	<!-- contacts區塊 -->
+	<div class="row contacts-section align-items-center contacts-bg-color">
+		<div class="col text-center">
+			<div class="contants-people">婚宴聯絡人：陳小姐</div>
+			<div class="contants-phone" onclick="location.href='tel:0915018429'">電話：0915-018-429<div>
+		</div>
 	</div>
 	<!-- 引入 Google jquery -->
 	<script

@@ -13,13 +13,9 @@
 	height: auto;
 }
 
-/* 背景圖片 */
-.remind-bg-img {
-	background-image: url('picture/remind.jpg');
-}
 /* 背景顏色 */
 .remind-bg-color {
-	background-color: #f7dec8;
+	background-color: #ffffff;
 }
 
 /* info 內容樣式 */

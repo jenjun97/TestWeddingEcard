@@ -14,8 +14,8 @@
 }
 
 /* 背景圖片 */
-.hall-bg {
-	background-image: url('');
+.hall-bg-img {
+	background-image: url('picture/hall.jpg');
 }
 
 /* info 內容樣式 */
