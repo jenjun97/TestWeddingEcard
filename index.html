@@ -143,8 +143,8 @@
 					</div>
 
 					<div class="col-6 col-md-auto d-flex justify-content-center">
-						<button id="bird-black" class="button button--pen"
-							onclick="triggerAddToCalendar('Apple')">
+						<a id="bird-black" class="button button--pen"
+							href="https://jenjun97.github.io/WeddingEcard/Sample/booking.ics">
 							<div class="button__wrapper">
 								<span class="button__text">Apple</span>
 							</div>
@@ -162,21 +162,13 @@
 									<div class="charactor__face2"></div>
 								</div>
 							</div>
-						</button>
+						</a>
 					</div>
 				</div>
 			</div>
 		</div>
 
 		<script>
-		function openInSafari() {
-		      const safariURL = "https://calendar.google.com/calendar/r/eventedit?text=%E9%87%97%26%E5%9D%87%E5%96%9C%E5%AE%B4&dates=20241019T040000Z/20241019T060000Z&details=%E6%8F%AA%E5%93%A9%E5%91%B7%E5%96%9C%E9%85%92&location=https%3A%2F%2Famour371.com.tw&sf=true&output=xml";
-		      if (/iP(hone|od|ad)/.test(navigator.platform)) {
-		        window.location.href = "x-web-search://?" + safariURL;
-		      } else {
-		        window.location.href = safariURL;
-		      }
-		    }
 	    
 			function triggerAddToCalendar(calendarType) {
 				// 定義事件資料
