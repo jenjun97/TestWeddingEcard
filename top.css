@@ -50,7 +50,8 @@
 		font-size: calc(2rem + 1vw);
 	}
 	.top-sub-title {
-		font-size: calc(1rem + 0.1vw);
+		/* font-size: calc(1rem + 0.1vw); */
+		font-size: 3vw !important;
 	}
 	.top-section {
 		/* 根據圖片的比例設定底部填充來維持高度 */

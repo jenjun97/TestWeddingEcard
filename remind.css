@@ -43,18 +43,23 @@
 	margin-top: 2vw;
 }
 
-	#bird-yellow, #bird-black {
-        	transform: scale(0.7); /* 縮小比例 */
-    }
+#bird-yellow, #bird-black, #bird-blue {
+	transform: scale(0.7); /* 縮小比例 */
+	margin: auto;
+}
+
+/* 隱藏原本的 Add to Calendar Button */
+add-to-calendar-button {
+	display: none;
+}
 
 /* RWD 設定 */
 @media ( max-width : 768px) {
-	.container1 {
-		display: inline-block; /* 确保transform能应用在内联元素上 */
-		transform: scale(0.3) !important; /* 缩小至80% */
+	.remind-title {
+		font-size: 5vw;
 	}
-	
-	#bird-yellow, #bird-black {
-        	transform: scale(0.5); /* 縮小比例 */
-    }
+	.col-6.col-md-auto.d-flex.justify-content-center {
+		transform: scale(0.5); /* 縮小比例 */
+		margin: auto;
+	}
 }

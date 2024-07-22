@@ -8,12 +8,12 @@
 <!-- 引入 Bootstrap 5 的 CSS -->
 <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
 <!-- 引入自定義的 CSS -->
-<link rel="stylesheet" href="fontStyles.css">
-<link rel="stylesheet" href="topStyles.css">
-<link rel="stylesheet" href="infoStyles.css">
-<link rel="stylesheet" href="hallStyles.css">
-<link rel="stylesheet" href="remindStyles.css">
-<link rel="stylesheet" href="birdStyles.css">
+<link rel="stylesheet" href="font.css">
+<link rel="stylesheet" href="top.css">
+<link rel="stylesheet" href="info.css">
+<link rel="stylesheet" href="hall.css">
+<link rel="stylesheet" href="remind.css">
+<link rel="stylesheet" href="bird.css">
 <!-- <link rel="stylesheet" href="buttonStyles.css"> -->
 
 <!-- 引入Google的字型 -->
@@ -27,9 +27,11 @@
 	href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC:wght@300;400;700&family=Noto+Sans+TC:wght@100..900&display=swap"
 	rel="stylesheet">
 
+
+
 <body>
 	<div class="container-fluid">
-		<!-- title區塊 -->
+		<!-- top區塊 -->
 		<div class="row top-section top-bg align-items-center">
 			<div class="col text-center">
 				<div class="top-overlay-container">
@@ -71,53 +73,121 @@
 		</div>
 
 		<!-- remind區塊 -->
-<!-- 		<div -->
-<!-- 			class="row remind-section align-items-center remind-bg-color d-md-flex justify-content-md-center"> -->
-<!-- 			<div class="remind-title lxgw-wenkai-mono-tc-bold">加入提醒</div> -->
-<!-- 			<div class="remind-content"> -->
-<!-- 				<div class="d-flex flex-wrap justify-content-center"> -->
-<!-- 					<div class="col-6 col-md-auto d-flex justify-content-center"> -->
-<!-- 						<a id="bird-yellow" href="#" class="button button--piyo"> -->
-<!-- 							<div class="button__wrapper"> -->
-<!-- 								<span class="button__text">ENTRY</span> -->
-<!-- 							</div> -->
-<!-- 							<div class="characterBox"> -->
-<!-- 								<div class="character wakeup"> -->
-<!-- 									<div class="character__face"></div> -->
-<!-- 								</div> -->
-<!-- 								<div class="character wakeup"> -->
-<!-- 									<div class="character__face"></div> -->
-<!-- 								</div> -->
-<!-- 								<div class="character"> -->
-<!-- 									<div class="character__face"></div> -->
-<!-- 								</div> -->
-<!-- 							</div> -->
-<!-- 						</a> -->
-<!-- 					</div> -->
-<!-- 					<div class="col-6 col-md-auto d-flex justify-content-center"> -->
-<!-- 						<a id="bird-black" href="#" class="button button--pen"> -->
-<!-- 							<div class="button__wrapper"> -->
-<!-- 								<span class="button__text">ENTRY</span> -->
-<!-- 							</div> -->
-<!-- 							<div class="characterBox"> -->
-<!-- 								<div class="character wakeup"> -->
-<!-- 									<div class="character__face"></div> -->
-<!-- 									<div class="charactor__face2"></div> -->
-<!-- 								</div> -->
-<!-- 								<div class="character wakeup"> -->
-<!-- 									<div class="character__face"></div> -->
-<!-- 									<div class="charactor__face2"></div> -->
-<!-- 								</div> -->
-<!-- 								<div class="character"> -->
-<!-- 									<div class="character__face"></div> -->
-<!-- 									<div class="charactor__face2"></div> -->
-<!-- 								</div> -->
-<!-- 							</div> -->
-<!-- 						</a> -->
-<!-- 					</div> -->
-<!-- 				</div> -->
-<!-- 			</div> -->
-<!-- 		</div> -->
+		<div
+			class="row remind-section align-items-center remind-bg-color d-md-flex justify-content-md-center">
+			<div class="remind-title lxgw-wenkai-mono-tc-bold">加入行事曆</div>
+
+			<!-- Add to Calendar Button 語法（隱藏） -->
+			<add-to-calendar-button id="atcb-google" name="釗&均喜宴"
+				description="揪哩呷喜酒" startDate="2024-10-19" startTime="12:00"
+				endDate="2024-10-19" endTime="14:00" timeZone="Asia/Taipei"
+				location="https://amour371.com.tw/" options="'Google'" buttonsList
+				size="7" lightMode="system" language="zh"></add-to-calendar-button>
+			<add-to-calendar-button id="atcb-apple" name="釗&均喜宴"
+				description="揪哩呷喜酒" startDate="2024-10-19" startTime="12:00"
+				endDate="2024-10-19" endTime="14:00" timeZone="Asia/Taipei"
+				location="https://amour371.com.tw/" options="'Apple'" buttonsList
+				size="7" lightMode="system" language="zh"></add-to-calendar-button>
+			<add-to-calendar-button id="atcb-outlook" name="釗&均喜宴"
+				description="揪哩呷喜酒" startDate="2024-10-19" startTime="12:00"
+				endDate="2024-10-19" endTime="14:00" timeZone="Asia/Taipei"
+				location="https://amour371.com.tw/" options="'Outlook.com'"
+				buttonsList size="7" lightMode="system" language="zh"></add-to-calendar-button>
+
+			<div class="remind-content">
+				<div class="d-flex flex-wrap justify-content-center">
+					<div class="col-6 col-md-auto d-flex justify-content-center">
+						<button id="bird-yellow" class="button button--piyo"
+							onclick="triggerAddToCalendar('Google')">
+							<div class="button__wrapper">
+								<span class="button__text">Google</span>
+							</div>
+							<div class="characterBox">
+								<div class="character wakeup">
+									<div class="character__face"></div>
+								</div>
+								<div class="character wakeup">
+									<div class="character__face"></div>
+								</div>
+								<div class="character">
+									<div class="character__face"></div>
+								</div>
+							</div>
+						</button>
+					</div>
+
+					<div class="col-6 col-md-auto d-flex justify-content-center">
+						<button id="bird-blue" class="button button--hoo"
+							onclick="triggerAddToCalendar('Outlook.com')">
+							<div class="button__wrapper">
+								<span class="button__text">Outlook</span>
+							</div>
+							<div class="characterBox">
+								<div class="character wakeup">
+									<div class="character__face"></div>
+									<div class="charactor__face2"></div>
+									<div class="charactor__body"></div>
+								</div>
+								<div class="character wakeup">
+									<div class="character__face"></div>
+									<div class="charactor__face2"></div>
+									<div class="charactor__body"></div>
+								</div>
+								<div class="character">
+									<div class="character__face"></div>
+									<div class="charactor__face2"></div>
+									<div class="charactor__body"></div>
+								</div>
+							</div>
+						</button>
+					</div>
+
+					<div class="col-6 col-md-auto d-flex justify-content-center">
+						<button id="bird-black" class="button button--pen"
+							onclick="triggerAddToCalendar('Apple')">
+							<div class="button__wrapper">
+								<span class="button__text">Apple</span>
+							</div>
+							<div class="characterBox">
+								<div class="character wakeup">
+									<div class="character__face"></div>
+									<div class="charactor__face2"></div>
+								</div>
+								<div class="character wakeup">
+									<div class="character__face"></div>
+									<div class="charactor__face2"></div>
+								</div>
+								<div class="character">
+									<div class="character__face"></div>
+									<div class="charactor__face2"></div>
+								</div>
+							</div>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			function triggerAddToCalendar(calendarType) {
+				// 定義事件資料
+			      const event = {
+			        name: "釗&均喜宴",
+			        description: "揪哩呷喜酒",
+			        startDate: "2024-10-19",
+			        startTime: "12:00",
+			        endDate: "2024-10-19",
+			        endTime: "14:00",
+			        timeZone: "Asia/Taipei",
+			        location: "https://amour371.com.tw/",
+			        options: [calendarType],
+			        timeZone: "Asia/Taipei",
+			        iCalFileName: "Event-釗&均喜宴"
+			      };
+			      atcb_action(event);
+    		}
+  		</script>
+
 		<!-- hall區塊 -->
 		<div class="row hall-section align-items-center">
 			<div class="col text-center">
@@ -148,6 +218,10 @@
 		src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
 	<!-- 引入 Bootstrap 5 的 JavaScript -->
 	<script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- 引用 Add to Calendar Button 的 JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2"
+		async defer></script>
 </body>
 
 </html>

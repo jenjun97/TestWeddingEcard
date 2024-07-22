@@ -142,6 +142,11 @@
 
 /* RWD 設定 */
 @media ( max-width : 768px) {
+	
+	.info-section{
+	height: 40vw !important;
+	}
+	
 	.info-spacing {
 		/* 上邊距調整 */
 		/*margin-top: calc(-6vw);*/
