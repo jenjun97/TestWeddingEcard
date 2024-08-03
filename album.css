@@ -36,16 +36,17 @@
     margin: 0 auto; /* 圖片居中 */
     width: 100% !important; /* 確保圖片寬度為100%，並強制應用 */
     height: auto !important; /* 高度自動調整，並強制應用 */
-    max-height: calc(100vh - var(--top-offset) - var(--bottom-offset)) !important; /* 動態最大高度，視窗高度減去上下偏移量 */
+    max-height1: calc(100vh - var(--top-offset) - var(--bottom-offset)) !important; /* 動態最大高度，視窗高度減去上下偏移量 */
+    max-height: 50%;
     object-fit: cover !important; /* 確保圖片覆蓋容器，並強制應用 */
     object-position: center !important; /* 確保圖片置中，並強制應用 */
-    clip-path: inset(var(--top-offset) 0 var(--bottom-offset) 0) !important; /* 上下裁切，使用變數，並強制應用 */
+    clip-path1: inset(var(--top-offset) 0 var(--bottom-offset) 0) !important; /* 上下裁切，使用變數，並強制應用 */
 }
 
 :root {
-	--album-title-top: 10%; /* 可調整位置的變數 */
+	--album-title-top: 50%; /* 可調整位置的變數 */
 	--album-title-left: 50%; /* 可調整位置的變數 */
-	--album-title-font-size: 2.2rem; /* 大視窗字體大小的變數 */
+	--album-title-font-size: 2rem; /* 大視窗字體大小的變數 */
 	--album-title-font-size-small: 1.2em; /* 小視窗字體大小的變數 */
 }
 
