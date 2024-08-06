@@ -31,28 +31,28 @@
 /* info 間距樣式 */
 .hall-spacing {
 	/* 上邊距 */
-	margin-top: 2vw;
+	margin-top: 1rem;
 }
 
 .hall-title {
-	font-size: 2vw;
-	margin-top: 2vw;
+	font-size: 2rem;
+	margin-top: 1rem;
 }
 
 .hall-text {
-	font-size: 1.5vw;
+	font-size: 1.5rem;
 }
 
 .hall-paring-title {
 	text-align: left;
 	font-weight: bold;
-	font-size: 2vw;
+	font-size: 2rem;
 }
 
 .hall-paring-text {
 	text-align: left;
-	font-size: 2vw;
-	margin-bottom: 2vw;
+	font-size: 2rem;
+	margin-bottom: 2rem;
 }
 /* Google 地圖 iframe 樣式 */
 .map-iframe {
@@ -67,17 +67,17 @@
 /* RWD 設定 */
 @media ( max-width : 768px) {
 	.hall-title {
-		font-size: 5vw;
+		font-size: 1.1rem;
 	}
 	.hall-text {
-		font-size: 4vw;
+		font-size: 1rem;
 	}
 	.hall-paring-title {
-		font-size: 3vw;
+		font-size: 0.7rem;
 	}
 	.hall-paring-text {
 		text-align: left;
-		font-size: 3vw;
+		font-size: 0.7rem;
 		margin-bottom: 0;
 	}
 }

@@ -34,13 +34,21 @@
 }
 
 .floor-icon {
-	width: 7rem;
+	width: 12rem;
 }
 
 .floor-title {
-	font-size: 1.5rem;
+	font-size: 1.7rem !important;
 }
 
 /* RWD 設定 */
 @media ( max-width : 768px) {
+	.floor-icon {
+		width: 4rem;
+	}
+	
+	.floor-title {
+		font-size: 1.3rem !important;
+	}
+		
 }
